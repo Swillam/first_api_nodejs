@@ -1,0 +1,11 @@
+{
+    "watch": [
+        "src"
+    ],
+    "ext": "js",
+    "exec": "babel-node --extensions \".js\" src/main",
+    "build": "babel ./src --out-dir .dist --source-maps",
+    "build:clean": "rm -rf dist",
+    "prebuild": "npm run build:clean",
+    "start:prod": "npm run build && node ./dist/index.js"
+}

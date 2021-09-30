@@ -1,0 +1,10 @@
+{
+    "watch": [
+        "src"
+    ],
+    "ext": "js",
+    "exec": "ts-node-dev --transpile-only --no-notify src/main.ts",
+    "build": "tsc",
+    "build:clean": "rm -rf dist",
+    "prebuild": "npm run build:clean"
+}
